@@ -15,16 +15,16 @@
         android:id="@+id/textViews"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        android:text="Enter only file name (Doctor Name) to read"
+        android:textSize="15sp"
+        android:text="@string/file"
         android:textColor="#ff16ff01" />
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="24dp"
         android:ems="10" >
 
@@ -35,7 +35,7 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
+        android:layout_alignEnd="@+id/editText1"
         android:layout_below="@+id/editText1"
         android:layout_marginTop="24dp"
         android:ems="10"
@@ -47,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editText1"
         android:layout_alignBottom="@+id/editText1"
-        android:layout_alignParentLeft="true"
-        android:text="Doctor Name :" />
+        android:layout_alignParentStart="true"
+        android:text="@string/doctor_name" />
 
     <TextView
         android:id="@+id/textView2"
@@ -56,18 +56,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/editText2"
         android:layout_alignBottom="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:text="Review" />
+        android:layout_alignParentStart="true"
+        android:text="@string/Review" />
 
     <Button
         android:id="@+id/write_internal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
         android:layout_below="@+id/editText2"
-        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="16dp"
-        android:text="save" />
+        android:text="@string/save" />
 
     <Button
         android:id="@+id/read_internal"
@@ -75,18 +75,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/write_internal"
         android:layout_alignBottom="@+id/write_internal"
-        android:layout_toRightOf="@+id/write_internal"
-        android:text="read" />
+        android:layout_toEndOf="@+id/write_internal"
+        android:text="@string/read" />
 
     <TextView
         android:id="@+id/textViewm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-android:gravity="left"
+android:gravity="start"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="162dp"
+        android:layout_marginBottom="142dp"
         android:textSize="22sp"
         android:textColor="@android:color/background_dark"
         android:textStyle="normal|bold"

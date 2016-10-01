@@ -1,6 +1,33 @@
 <resources>
-    <string name="app_name">Profile</string>
+    <string name="app_name">Health Manager</string>
     <string name="deleteContact">Are you sure, you want to delete it.</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="profile">Profile</string>
+    <string name="history">Medical History</string>
+    <string name="records">Your Medical Records</string>
+    <string name="delete">Delete</string>
+    <string name="review">Review Doctor</string>
+    <string name="Review">Review"</string>
+    <string name="add_new">Add New Record</string>
+    <string name="edit">Edit</string>
+    <string name="appointment">Appointment</string>
+    <string name="UserProfile">User Profile</string>
+    <string name="SharedPreference">Shared Preference</string>
+    <string name="file">Enter only file name (Doctor Name) to read</string>
+    <string name="sql">SQLITE Data Base</string>
+    <string name="disease">Disease</string>
+    <string name="dn">Disease Name</string>
+    <string name="record">Records</string>
+    <string name="mail">Email</string>
+    <string name="name"> Name </string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="medication">Medication</string>
+    <string name="doctor">Doctor</string>
+    <string name="age">Age</string>
+    <string name="read">Read</string>
+    <string name="Update">Update</string>
+    <string name="yes_no">Yes/No</string>
+<string name="save">Save</string>
+    <string name="details">Appointement details</string>
 </resources>

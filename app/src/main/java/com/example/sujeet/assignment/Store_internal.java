@@ -2,8 +2,7 @@ package com.example.sujeet.assignment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,21 +12,20 @@ import android.widget.Toast;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-import static android.R.attr.data;
 
 
 public class Store_internal extends AppCompatActivity {
-Button b1,b2;
-    EditText ed1,w;
-    TextView tv;
-    String data;
+    private EditText ed1;
+    private EditText w;
+    private TextView tv;
+    private String data;
     private String file = "review";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_internal);
-        b1=(Button)findViewById(R.id.write_internal);
-        b2=(Button)findViewById(R.id.read_internal);
+        Button b1 = (Button) findViewById(R.id.write_internal);
+        Button b2 = (Button) findViewById(R.id.read_internal);
         w=(EditText)findViewById(R.id.editText1);
         ed1=(EditText)findViewById(R.id.editText2);
         tv=(TextView)findViewById(R.id.textViewm);
@@ -35,7 +33,7 @@ Button b1,b2;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                data="Doctor: "+ w.getText().toString() +"\n\n"+"Review:   "+ed1.getText().toString()+"\n\n";
+                data="\n\nDoctor: "+ w.getText().toString() +"\n\n"+"Review:   "+ed1.getText().toString()+"\n\n";
 
                 try {
                     if(!w.getText().toString().equals(""))

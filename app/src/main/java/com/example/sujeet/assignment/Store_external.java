@@ -1,8 +1,9 @@
 package com.example.sujeet.assignment;
 
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,9 +20,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class Store_external extends AppCompatActivity {
-    EditText editTextFileName,editTextData;
-    Button saveButton,readButton;
-    TextView tv;
+    private EditText editTextFileName;
+    private EditText editTextData;
+    private Button saveButton;
+    private Button readButton;
+    private TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +40,7 @@ public class Store_external extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 String filename=editTextFileName.getText().toString();
-                String data="\n\nAppointment Details:   "+editTextData.getText().toString()+"\n\n";
+                String data="Doctor Name: " +filename+"\n\nAppointment Details:   "+editTextData.getText().toString()+"\n\n";
 
                 FileOutputStream fos;
                 try {
@@ -46,14 +49,14 @@ public class Store_external extends AppCompatActivity {
                     FileOutputStream fOut = new
 
                             FileOutputStream(myFile);
-                    OutputStreamWriter myOutWriter = new
-
-                            OutputStreamWriter(fOut);
+                    OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
                     myOutWriter.append(data);
                     myOutWriter.close();
                     fOut.close();
-
-                    Toast.makeText(getApplicationContext(),filename + " saved",Toast.LENGTH_LONG).show();
+editTextFileName.setText("");
+                    editTextData.setText("");
+                    tv.setText("");
+                    Toast.makeText(getApplicationContext(),filename + "  saved",Toast.LENGTH_SHORT).show();
 
 
                 } catch (FileNotFoundException e) {e.printStackTrace();}

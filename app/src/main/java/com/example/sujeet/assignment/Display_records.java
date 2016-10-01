@@ -3,7 +3,7 @@ package com.example.sujeet.assignment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,20 +14,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 
-import static com.example.sujeet.assignment.R.id.email;
-import static com.example.sujeet.assignment.R.id.savedata;
 
 public class Display_records extends AppCompatActivity {
-    int from_Where_I_Am_Coming = 0;
+
     private DBHelper mydb;
 
-    TextView disease;
-    TextView doctor;
-    TextView medication;
+    private TextView disease;
+    private TextView doctor;
+    private TextView medication;
 
-    int id_To_Update = 0;
+    private int id_To_Update = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

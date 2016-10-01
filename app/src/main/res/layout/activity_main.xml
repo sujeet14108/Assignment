@@ -16,28 +16,28 @@
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:id="@+id/Profile"
-     android:text="Profile"
+     android:text="@string/profile"
      android:layout_marginBottom="50dp"
      android:onClick="click"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Record"
-        android:text="Medical History"
+        android:text="@string/history"
         android:layout_marginBottom="50dp"
         android:onClick="click"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Review"
-        android:text="Review Doctor"
+        android:text="@string/review"
         android:layout_marginBottom="50dp"
         android:onClick="click"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Appointment"
-        android:text="request Appointment"
+        android:text="@string/appointment"
         android:onClick="click"/>
 
 

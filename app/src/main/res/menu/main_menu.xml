@@ -3,7 +3,7 @@
 
     <item android:id="@+id/item1"
         android:icon="@drawable/send"
-        android:title="Add_New" >
+        android:title="@string/add_new" >
     </item>
 
 </menu>

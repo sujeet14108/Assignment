@@ -9,12 +9,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class SharedPreference extends AppCompatActivity {
-    EditText name,mail,age;
-    public static final String MyPREFERENCES = "profile" ;
-    public static final String Name = "name";
-    public static final String Age = "age";
-    public static final String Email = "email";
-    SharedPreferences sharedpreferences;
+    private EditText name;
+    private EditText mail;
+    private EditText age;
+    private static final String MyPREFERENCES = "profile" ;
+    private static final String Name = "name";
+    private static final String Age = "age";
+    private static final String Email = "email";
+    private SharedPreferences sharedpreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +60,7 @@ public class SharedPreference extends AppCompatActivity {
                 editor.putString(Name, n);
                 editor.putString(Age, a);
                 editor.putString(Email, m);
-                editor.commit();
+                editor.apply();
                 Toast.makeText(this,"Updated", Toast.LENGTH_LONG).show();
 
         }

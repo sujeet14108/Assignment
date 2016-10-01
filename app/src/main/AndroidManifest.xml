@@ -12,10 +12,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SharedPreference"
-            android:label="@string/app_name" />
+            android:label="@string/profile" />
         <activity
             android:name=".Record_SQlite"
-            android:label="@string/app_name" />
+            android:label="@string/history" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Store_internal" />
-        <activity android:name=".Display_records" />
-        <activity android:name=".Store_external"></activity>
+        <activity android:name=".Store_internal"
+            android:label="@string/review"/>
+        <activity android:name=".Display_records"
+            android:label="@string/records"/>
+        <activity android:name=".Store_external"
+            android:label="@string/appointment"/>
     </application>
 
 </manifest>

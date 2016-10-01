@@ -19,15 +19,15 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Disease"
-        android:layout_marginRight="15dp"
+        android:text="@string/disease"
+        android:layout_marginEnd="15dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <EditText
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/Disease"
 
-       android:hint="Disease Name"
+       android:hint="@string/dn"
        />
     </LinearLayout>
     <LinearLayout
@@ -38,17 +38,17 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doctor"
-        android:layout_marginRight="15dp"
+        android:text="@string/doctor"
+        android:layout_marginEnd="15dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Doctor"
-        android:layout_below="@+id/textView2"
 
 
-        android:hint="Doctor Name"/>
+
+        android:hint="@string/doctor_name"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -58,21 +58,21 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Medication"
-        android:layout_marginRight="22dp"
+        android:text="@string/medication"
+        android:layout_marginEnd="22dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Medication"
-        android:layout_below="@+id/textView2"
 
-        android:hint="Yes/No"/>
+
+        android:hint="@string/yes_no"/>
         </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/save"
         android:id="@+id/savedata"
         android:layout_marginTop="50dp"
         android:onClick="run"/>

@@ -14,21 +14,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Profile"
+        android:text="@string/UserProfile"
         android:id="@+id/textView"
-
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="35dp" />
+        android:textSize="35sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shared Preference"
+        android:text="@string/SharedPreference"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:textSize="35dp"
+
+        android:textSize="35sp"
         android:layout_marginBottom="50dp"
         android:textColor="#ff16ff01" />
     <LinearLayout
@@ -38,20 +34,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
-        android:layout_marginRight="15dp"
+        android:text="@string/name"
+        android:layout_marginEnd="15dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/name"
-        android:layout_below="@+id/textView2"
 
-        android:hint=" Name "
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
+        android:hint="@string/name"
+
+        />
         </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -60,19 +54,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age"
-            android:layout_marginRight="15dp"
+            android:text="@string/age"
+            android:layout_marginEnd="15dp"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/age"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Age" />
+        android:hint="@string/age" />
         </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -81,20 +70,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:layout_marginRight="15dp"
+            android:text="@string/mail"
+            android:layout_marginEnd="15dp"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Email" />
+        android:hint="@string/mail" />
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -104,7 +88,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update"
+            android:text="@string/Update"
             android:id="@+id/update"
             android:layout_marginTop="50dp"
             android:onClick="onlick"/>
