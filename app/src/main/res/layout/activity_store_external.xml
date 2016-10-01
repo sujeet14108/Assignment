@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_external"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujeet.assignment.Store_external">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:text="Enter only file name (Doctor Name) to read"
+        android:textColor="#ff16ff01" />
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editText11"
+            android:layout_below="@+id/editText11"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:layout_marginBottom="50dp"
+
+            android:layout_toRightOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText11"
+            android:layout_alignBottom="@+id/editText11"
+            android:layout_alignParentLeft="true"
+            android:text="Doctor Name :" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText22"
+            android:layout_alignBottom="@+id/editText22"
+            android:layout_alignParentLeft="true"
+            android:text="Appointement details" />
+
+        <Button
+            android:id="@+id/write_external"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText22"
+            android:layout_below="@+id/editText22"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="16dp"
+            android:text="save" />
+
+    <TextView
+            android:id="@+id/textViewm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="162dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/read_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="read"
+        android:layout_alignBaseline="@+id/write_external"
+        android:layout_alignBottom="@+id/write_external"
+        android:layout_toLeftOf="@+id/textViewm"
+        android:layout_toStartOf="@+id/textViewm"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+    <TextView
+        android:id="@+id/textViewl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="left"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="viewStart" />
+</RelativeLayout>
