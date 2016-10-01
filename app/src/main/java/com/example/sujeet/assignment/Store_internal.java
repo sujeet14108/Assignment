@@ -43,6 +43,9 @@ public class Store_internal extends AppCompatActivity {
                     fOut.write(data.getBytes());
                     fOut.close();
                     Toast.makeText(getBaseContext(),"file saved",Toast.LENGTH_SHORT).show();
+                    w.setText("");
+                    ed1.setText("");
+                    tv.setText("");
                 }
 
                 catch (Exception e) {

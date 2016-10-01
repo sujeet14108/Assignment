@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sujeet.assignment.SharedPreference">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UserProfile"
+        android:id="@+id/textView"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SharedPreference"
+        android:id="@+id/textView2"
+
+        android:textSize="35sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ff16ff01" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_marginEnd="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+
+
+            android:hint="@string/name"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:layout_marginEnd="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:hint="@string/age" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mail"
+            android:layout_marginEnd="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/mail" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Update"
+            android:id="@+id/update"
+            android:layout_marginBottom="10dp"
+            android:onClick="onlick"/>
+
+    </LinearLayout>
+
+</LinearLayout>
