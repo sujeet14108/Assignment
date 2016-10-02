@@ -68,8 +68,8 @@ public class Store_internal extends AppCompatActivity {
                     while( (c = fin.read()) != -1){
                         temp = temp + Character.toString((char)c);
                     }
-                    tv.setText(temp);
-                    Toast.makeText(getBaseContext(),"file read", Toast.LENGTH_SHORT).show();
+                    //tv.setText(temp);
+                    Toast.makeText(getBaseContext(),temp+"\nfile read", Toast.LENGTH_SHORT).show();
                 }
                 catch(Exception e){
                 }
